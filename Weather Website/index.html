@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="weather.css" />
+
+    <title>Weather Website Application</title>
+  </head>
+  <body>
+    <div class="container-fluid box1">
+      <div class="row mb-5">
+        <label for="city-name" class="col-sm-12 col-form-label"
+          >City Name</label
+        >
+        <div class="col-sm-12 input-box">
+          <input type="text" class="form-control" id="city-name" placeholder="e.g.., Richmond Hill, Guelph, Markham, Toronto..." required/>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <label for="country-code" class="col-sm-12 col-form-label"
+          >Country Name</label
+        >
+        <div class="col-sm-12 input-box">
+          <input type="text" class="form-control" id="country-name" placeholder="e.g.., Canada, USA, China, Germany..." required/>
+        </div>
+      </div>
+      <button
+        class="btn btn-primary"
+        id="check-weather"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Check Weather
+      </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Here is your current weather for today 🌡
+              </h5>
+            </div>
+            <div class="modal-body">
+              <h3 id="default-country0"></h3>
+              <p id="default-temp0"></p>
+              <p id="default-feel0"></p>
+              <p id="default-icon0"></p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid box2">
+      <div class="row justify-content-md-center">
+        <div class="col-md-3">
+          <h3 id="default-country1"></h3>
+          <p id="default-temp1"></p>
+          <p id="default-feel1"></p>
+          <p id="default-icon1"></p>
+        </div>
+        <div class="col-md-3">
+          <h3 id="default-country2"></h3>
+          <p id="default-temp2"></p>
+          <p id="default-feel2"></p>
+          <p id="default-icon2"></p>
+        </div>
+        <div class="col-md-3">
+          <h3 id="default-country3"></h3>
+          <p id="default-temp3"></p>
+          <p id="default-feel3"></p>
+          <p id="default-icon3"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
