@@ -1,6 +1,6 @@
 const city_Name = document.getElementById("city-name");
 const country_Name = document.getElementById("country-name");
-const api_Key = "b97b602322673de3557a7759612332fc";
+const api_Key = "Hidden";
 const default_Url = `https://api.openweathermap.org/data/2.5/weather?q=Richmond Hill, Canada&appid=${api_Key}&units=metric`;
 const default_Url2 = `https://api.openweathermap.org/data/2.5/weather?q=Markham, Canada&appid=${api_Key}&units=metric`;
 const default_Url3 = `https://api.openweathermap.org/data/2.5/weather?q=Toronto, Canada&appid=${api_Key}&units=metric`;
